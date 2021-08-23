@@ -14,7 +14,6 @@ module.exports = {
     migrations: {
       tableName: 'knex_migrations'
     }*/
-    production: {
       client: 'mysql',
       connection: {
         host: process.env.DB_HOST,
@@ -32,6 +31,6 @@ module.exports = {
       /*migrations: {
         directory: ‘/src/database/migrations’
       },*/
-      useNullAsDefault: true,
-    }
+      
+    
 };
