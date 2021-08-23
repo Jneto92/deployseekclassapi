@@ -15,7 +15,7 @@ module.exports = {
       tableName: 'knex_migrations'
     }*/
     production:{
-      client: "mysql",
+      client: "mysql2",
       connection: {
         host: "us-cdbr-east.cleardb.com/",
         database: "heroku_db",
