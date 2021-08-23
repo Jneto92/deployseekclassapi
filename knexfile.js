@@ -1,7 +1,7 @@
 // Update with your config settings.
 module.exports = {
 
-    client: 'mysql2',
+    /*client: 'mysql2',
     connection: {
       database: 'seekclass',
       user:     'root',
@@ -13,8 +13,8 @@ module.exports = {
     },
     migrations: {
       tableName: 'knex_migrations'
-    }
-    /*production: {
+    }*/
+    production: {
       client: 'mysql',
       connection: {
         host: process.env.DB_HOST,
@@ -23,14 +23,15 @@ module.exports = {
         password: process.env.DB_PASSWORD
       },
       pool: {
-      min: 2,
-      max: 10
+        min: 2,
+        max: 10
       },
       migrations: {
         tableName: 'knex_migrations'
       },
-      seed:{
-        directory: __dirname + '/seeds'
-      }
-    }*/
+      /*migrations: {
+        directory: ‘/src/database/migrations’
+      },*/
+      useNullAsDefault: true,
+    }
 };
