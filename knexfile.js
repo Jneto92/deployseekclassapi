@@ -14,7 +14,7 @@ module.exports = {
     migrations: {
       tableName: 'knex_migrations'
     }*/
-      client: 'mysql',
+      client: 'mysql2',
       connection: {
         host: process.env.DB_HOST,
         database: process.env.DB_NAME,
