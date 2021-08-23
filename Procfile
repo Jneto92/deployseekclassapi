@@ -1,1 +1,1 @@
-web: knex seed:run && node index.js
+web: node index.js
