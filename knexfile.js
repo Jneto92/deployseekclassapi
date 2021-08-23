@@ -15,12 +15,12 @@ module.exports = {
       tableName: 'knex_migrations'
     }*/
     production:{
-      client: process.env.DB_CLIENT,
+      client: "mysql",
       connection: {
-        host: process.env.DB_HOST,
-        database: process.env.DB_NAME,
-        user: process.env.DB_USER,
-        password: process.env.DB_PASSWORD
+        host: "us-cdbr-east.cleardb.com/",
+        database: "heroku_db",
+        user: "adffdadf2341",
+        password: "adf4234"
       },
       pool: {
         min: 2,
