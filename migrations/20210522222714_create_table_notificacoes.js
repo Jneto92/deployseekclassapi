@@ -8,7 +8,7 @@ exports.up = function(knex) {
         table.integer('turmas').unsigned().defaultTo(0)
         table.timestamp('createdAt').defaultTo(knex.fn.now())
         table.timestamp('updatedAt').defaultTo(knex.fn.now())
-        //table.boolean('postar').defaultTo(false)
+        table.boolean('postar').defaultTo(false)
             
         table.foreign('turmas')
             .references('id')
