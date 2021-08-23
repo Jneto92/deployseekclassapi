@@ -14,7 +14,7 @@ module.exports = {
     migrations: {
       tableName: 'knex_migrations'
     }*/
-    production:{
+    
       client: "mysql2",
       connection: {
         host: "us-cdbr-east.cleardb.com/",
@@ -32,7 +32,7 @@ module.exports = {
       /*migrations: {
         directory: ‘/src/database/migrations’
       },*/
-    }
+    
       
       
     
